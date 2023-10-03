@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+}
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #444;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    font-size: 28px;
+    margin: 0 0 20px;
+}
+
+input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    background-color: #555;
+    border: none;
+    color: #fff;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-top: 10%;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+/* List styles with added tick and cross buttons */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #777;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #666;
+    border-radius: 20px;
+}
+.tick {
+    color: #8de190;
+    cursor: pointer;
+    font-size: 24px;
+    margin-right: 10px;
+    transition: background-color 0.3s; /* Add a transition effect for the background color */
+}
+
+
+.completed {
+    background-color: limegreen; 
+    transition: background-color 0.3s; 
+}
+
+
+/* Styles for the cross button */
+.cross {
+    color: #FF3547;
+    cursor: pointer;
+    font-size: 24px;
+    margin-left: 10px;
+    transition: background-color 0.3s;
+}
+.crossed {
+
+    transition: background-color 0.3s;
+}
+.delete {
+    background-color: #FF3547;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.delete:hover {
+    background-color: #C82333;
+}
