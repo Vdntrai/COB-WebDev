@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function() {
     addTaskButton.addEventListener("click", function() {
         const taskText = taskInput.value.trim();
         if (taskText !== "") {
-            addTask(taskText, "#777"); // Default background color is #777
+            addTask(taskText, "#777");
             taskInput.value = "";
         }
     });
@@ -28,10 +28,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
     function addTask(text, color) {
         const existingTask = tasks.find(task => task.text === text);
-        let background = color || "#777"; // Use the provided color or default to #777
-
+        let background = color || "#777"; 
         if (existingTask) {
-            background = existingTask.background; // Load the background color from local storage for existing tasks
+            background = existingTask.background; 
         }
 
         const taskItem = document.createElement("li");
