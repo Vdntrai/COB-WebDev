@@ -38,7 +38,6 @@ button {
     margin-right: 10px;
 }
 
-/* List styles with added tick and cross buttons */
 ul {
     list-style: none;
     padding: 0;
@@ -59,7 +58,7 @@ li {
     cursor: pointer;
     font-size: 24px;
     margin-right: 10px;
-    transition: background-color 0.3s; /* Add a transition effect for the background color */
+    transition: background-color 0.3s;
 }
 
 
@@ -69,7 +68,6 @@ li {
 }
 
 
-/* Styles for the cross button */
 .cross {
     color: #FF3547;
     cursor: pointer;
