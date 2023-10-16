@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://c0.wallpaperflare.com/preview/208/82/396/backgrounds.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow: hidden;
+
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    margin-top: 5px;
+    color: #dcd9d9;
+}
+
+.converter-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.converter {
+    background-color: rgba(93, 88, 88, 0.6);
+    border: 2px solid #ddd;
+    border-radius: 30px;
+    padding: 90px;
+    box-shadow: 0px 0px 20px rgb(43, 42, 42);
+    width: 220px;
+    height:200px;
+}
+
+input[type="number"] {
+    max-width: 100%;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 22px;
+}
+
+select, button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 22px;
+}
+
+button {
+    background-color: #007BFF;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+#unit_from{
+    margin-top: 20px;
+    width: 100%;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+#unit_to{
+    margin-top: 10px;
+    width: 100%;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+p {
+    font-weight: 900;
+    color: #fff; 
+}
+.spam{
+    color: #a5a5a5;
+}
+
+@media (max-width: 678px) {
+    body {
+        background-size: cover;
+        background-attachment: scroll; 
+
+    .converter {
+        padding: 20px; 
+        width: 100%; 
+    }
+
+    input[type="number"], select, button {
+        width: 100%; 
+    }
+
+    #unit_from, #unit_to {
+        margin: 10px 0; 
+    }
+}
+}
